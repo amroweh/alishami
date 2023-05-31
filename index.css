@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url("./Assets/Fonts/Inconsolata/Inconsolata-VariableFont.ttf");
+}
+
+*{
+    font-family: "Inconsolata";
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+.container{
+    max-width: 1000px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/* Header */
+
+header nav ul{
+    text-align: right;
+}
+header nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Showcase */
+#showcase{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#left_showcase{
+    flex: 1;
+}
+
+#left_showcase h1{
+    font-size: 100px;
+    color: #52D0C9;
+    margin-bottom: 20px;
+}
+
+#left_showcase h2{
+    font-size: 50px;
+}
+
+#right_showcase{
+    flex: 1;
+    background-color: lightgoldenrodyellow;
+}
+
+/* About */
+
+#about{
+    margin-top: 50px;
+    max-width: 500px;
+}
+
+#about ul{
+    column-count: 2;
+}
+
+#about li::marker{
+    color: #52D0C9;
+    font-size: 30px;
+}
+
+/* Button */
+
+#mainButton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#projectTitles{    
+    background-color: #52D0C9;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 999px;
+    font-size: 16px;
+}
+
+#projectTitles li{
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    padding: 16px 3px;
+}
+
+#projectTitles li:hover{
+    cursor: pointer;
+    background-color: #63dad4;
+}
+
+#mainButton button{
+    all: unset;
+    background-color: #52D0C9;
+    font-size: 16px;
+    padding: 16px 24px;
+    border-radius: 999px;
+}
+
+#mainButton button:hover{
+    cursor: pointer;
+    background-color: #63dad4;
+}
+
+/* Contact */
+#contact{
+    margin-top: 50px;
+    max-width: 500px;
+}
