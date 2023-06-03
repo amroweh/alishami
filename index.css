@@ -132,3 +132,13 @@ header nav ul li:hover{
     max-width: 700px;
     font-size: 20px;
 }
+
+
+@media only screen and (max-width: 600px){
+    #left_showcase h1{
+        font-size: 80px;
+    }   
+    #left_showcase h2{
+        font-size: 40px;
+    }
+}
