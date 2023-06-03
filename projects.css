@@ -4,6 +4,10 @@
     margin-bottom: 20px;
 }
 
+.project{
+    margin-bottom: 13vh;
+}
+
 .project h1{
     font-size: 90px;
     margin-bottom: 10px;
@@ -13,5 +17,36 @@
     font-size: 30px;
 }
 
-.project p{
+.project img{
+    max-width: 100%;
+}
+
+.imageContainerTwo img{
+    max-width: calc(50% - 5px);
+}
+
+.imageContainerTwo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imageContainerThree img{
+    max-width: calc(33% - 4px);
+}
+
+.imageContainerThree{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .imageContainerTwo, .imageContainerThree{
+        display: block;
+        text-align: center;
+    }
+    .imageContainerTwo img, .imageContainerThree img{
+        max-width: 80%;        
+    }
 }
