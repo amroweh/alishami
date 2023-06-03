@@ -135,6 +135,10 @@ header nav ul li:hover{
 
 
 @media only screen and (max-width: 600px){
+    header nav ul li{
+        font-size: 5vw;
+        margin-left: 6px;
+    }
     #left_showcase h1{
         font-size: 20vw;
     }   
