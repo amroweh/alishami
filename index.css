@@ -25,9 +25,14 @@ h1,h2,h3,h4,h5,h6{
 
 /* Header */
 
-header nav ul{
+/* header nav ul{
     text-align: right;
+    padding: 0;
 }
+#navMenuToggleButton{
+    display: none;
+}
+
 header nav ul li{
     list-style: none;
     display: inline-block;
@@ -38,6 +43,27 @@ header nav ul li{
 header nav ul li:hover{
     text-decoration: underline;
     text-decoration-color: #52D0C9;
+} */
+
+header nav{
+    overflow: hidden;
+}
+
+header nav a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav li{
+    list-style: none;    
+}
+
+header nav #navMenuToggleButton{
+    display: none;
 }
 
 /* Showcase */
@@ -135,10 +161,44 @@ header nav ul li:hover{
 
 
 @media only screen and (max-width: 600px){
-    header nav ul li{
-        font-size: 5vw;
-        margin-left: 6px;
+    
+    /* Header */
+    header nav, header nav a{
+        background-color: #52D0C9;        
     }
+    header nav a:not(:first-child) {display: none;}
+    header nav a:not(:first-child):hover {background-color:#63dad4;}
+    header nav a#navMenuToggleButton{
+        float: right;
+        display: block;        
+    }
+    header nav a#navMenuToggleButton:hover{
+        background-color: white;        
+    }
+    header nav a#navMenuToggleButton .open{
+        display: none;
+    }
+
+    /* Header  on change (responsive) */
+    header nav.responsive {position: relative;}
+    header nav.responsive a#navMenuToggleButton {
+        position: absolute;
+        right: 0;
+        top: 0;        
+    }
+    header nav.responsive a#navMenuToggleButton .closed{
+        display: none;
+    }
+    header nav.responsive a#navMenuToggleButton .open{
+        display: inline;
+    }
+    header nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    /* Showcase */
     #left_showcase h1{
         font-size: 20vw;
     }   
