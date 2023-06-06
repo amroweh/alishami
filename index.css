@@ -162,29 +162,33 @@ header nav #navMenuToggleButton{
 
 @media only screen and (max-width: 600px){
     
-    /* Header */
-    header nav, header nav a{
-        background-color: #52D0C9;        
+    /* Header */    
+    header nav a:not(:first-child) {
+        display: none;
+        
     }
-    header nav a:not(:first-child) {display: none;}
-    header nav a:not(:first-child):hover {background-color:#63dad4;}
+    header nav a:not(:first-child):hover {background-color:#63dad4; color: white;  }
     header nav a#navMenuToggleButton{
         float: right;
-        display: block;        
+        display: block;                
+    }
+    header nav a#navMenuToggleButton span{
+        line-height: 0;
     }
     header nav a#navMenuToggleButton:hover{
-        background-color: white;        
+        background-color: #63dad4;            
+        color: white;     
     }
     header nav a#navMenuToggleButton .open{
-        display: none;
+        display: none;        
     }
 
     /* Header  on change (responsive) */
-    header nav.responsive {position: relative;}
+    header nav.responsive {position: relative;background-color: #52D0C9;}
     header nav.responsive a#navMenuToggleButton {
         position: absolute;
         right: 0;
-        top: 0;        
+        top: 0;       
     }
     header nav.responsive a#navMenuToggleButton .closed{
         display: none;
